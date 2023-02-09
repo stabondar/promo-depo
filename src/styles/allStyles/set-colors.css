@@ -1,0 +1,30 @@
+body, .projects__left, .projects__slider-bg
+{
+    color: var(--main-color);
+    background-color: var(--main-bg);
+}
+
+.col--accent
+{
+    color: var(--main-accent);
+}
+
+:is(.nav__bg, .borders__left, .borders__right, .projects__border, .focus__divider)
+{
+    background-color: var(--main-color);
+}
+
+:is(.borders__top path, .projects__arrow path) 
+{
+    fill: var(--main-color);
+}
+
+.nav__cta path, .projects__title--arrow path
+{
+    fill: var(--main-accent);
+}
+
+.projects__arrow
+{
+    border-color: var(--main-color);
+}

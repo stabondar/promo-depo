@@ -1,0 +1,11 @@
+label.error 
+{
+    font-size: 0.8rem;
+    color: black;
+    width: 100%;
+    font-weight: 400;
+    position: absolute;
+    bottom: 18%;
+    right: 0;
+    text-align: right;
+}

@@ -1,0 +1,9 @@
+.form .btn p
+{
+    line-height: 1.5 !important;
+}
+
+form label
+{
+    pointer-events: none;
+}

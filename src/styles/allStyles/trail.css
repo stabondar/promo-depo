@@ -1,0 +1,9 @@
+.hero__trail--img
+{
+    opacity: 0;
+}
+
+.hero__trail--img img
+{
+    scale: 1.02
+}

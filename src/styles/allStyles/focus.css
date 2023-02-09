@@ -1,0 +1,4 @@
+.focus__item
+{
+    max-width: clamp(22.5rem, 24em,  26.15rem);
+}

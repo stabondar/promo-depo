@@ -1,11 +1,30 @@
-main
+@import url(./allStyles/root.css);
+@import url(./allStyles/trail.css);
+@import url(./allStyles/delay.css);
+@import url(./allStyles/title.css);
+@import url(./allStyles/set-colors.css);
+@import url(./allStyles/loader.css);
+@import url(./allStyles/projects.css);
+@import url(./allStyles/slider.css);
+@import url(./allStyles/focus.css);
+@import url(./allStyles/form.css);
+@import url(./allStyles/validate.css);
+@import url(./allStyles/hero.css);
+@import url(./allStyles/button.css);
+@import url(./allStyles/how-we-work.css);
+@import url(./allStyles/Burger/burger.css);
+@import url(./allStyles/ChangeColors/color-transitions.css);
+@import url(./allStyles/ChangeColors/dark.css);
+@import url(./allStyles/ChangeColors/light.css);
+
+body, header
 {
-  visibility: hidden;
+    background-color: var(--main-bg);
 }
 
 .loader
 {
-  display: block;
+  display: flex;
 }
 
 .burger__item.w--current
@@ -15,13 +34,24 @@ main
 
 .burger__item.w--current .h3--84
 {
-  color: #7870F1;
+  color: #ef340d;
 }
 
 ::selection
 {
-  background-color: #7870F1;
+  background-color: #ef340d;
   color: white;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: transparent;
+}
+
+::-webkit-scrollbar 
+{
+    display: none;
+}
+
+html
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }

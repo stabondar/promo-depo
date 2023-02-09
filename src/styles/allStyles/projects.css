@@ -1,0 +1,10 @@
+.projects__border.is--right
+{
+    height: calc(100% - 2.5rem);
+}
+
+.projects__left 
+{
+    position: relative;
+    z-index: 2;
+}

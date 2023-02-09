@@ -1,0 +1,29 @@
+.work__body
+{
+    height: 500vh;
+}
+
+.work__list
+{
+    position: sticky;
+    top: 0;
+}
+
+.work__item
+{
+    position: absolute;
+    top: 0;
+}
+
+.work__item.is--2
+{
+    transform: translateY(calc(100vh + 4.17em));
+}
+
+.section-title.is--work,
+.work__item,
+.work__next
+{
+    transition: background-color var(--transition-dur);
+    background-color: var(--main-bg);
+}

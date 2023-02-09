@@ -1,0 +1,53 @@
+.at-top .nav__burger
+{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.at-top .nav__right
+{
+    clip-path: circle(140% at 100% 0) !important;
+    transition: clip-path 0.1s linear !important;
+}
+
+.at-top .nav__list
+{
+    transition: padding-top 0s linear !important;
+    padding-top: 0rem;
+}
+
+.at-top :is(.nav__cta.is--inside-list, .nav__item)
+{
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+}
+
+.at-top .nav__right
+{
+    pointer-events: auto;
+}
+
+.at-top .nav__logo .nav__logo--right .logo-char
+{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.at-top .nav__logo .nav__logo--right .nav__logo--copyright
+{
+    transform: translateX(0em) !important; 
+    transition-delay: 0s !important;
+}
+
+.nav__logo:hover .nav__logo--right .logo-char
+{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav__logo:hover .nav__logo--right .nav__logo--copyright
+{
+    transform: translateX(0em) !important; 
+    transition-delay: 0s !important;
+}

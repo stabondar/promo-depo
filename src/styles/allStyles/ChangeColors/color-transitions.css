@@ -1,0 +1,30 @@
+/* Background and Color */
+body, .btn
+{
+    transition: color var(--transition-dur), background-color var(--transition-dur);
+}
+
+/* Color */
+:is(.col--accent)
+{
+    transition: color var(--transition-dur);
+}
+
+/* Background */
+:is(.borders__left, .borders__right, .nav__burger--line, .section-title__divider, .projects__left, .projects__slider-bg, .projects__border, .focus__divider)
+{
+    transition: background-color var(--transition-dur);
+}
+
+/* Fill */
+.borders__top path,
+:is(.nav__cta path, .projects__arrow path, .projects__title--arrow path)
+{
+    transition: fill var(--transition-dur);
+}
+
+/* Filter */
+.nav__logo
+{
+    transition: filter var(--transition-dur);
+}

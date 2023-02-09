@@ -1,0 +1,32 @@
+.btn
+{
+    clip-path: circle(50.0% at 50% 50%);
+    background-color: var(--main-accent);
+}
+
+.btn__overlay
+{
+    background-color: var(--main-color);
+    color: var(--main-bg);
+    clip-path: circle(30.0% at 50% 130%);
+    transition: all var(--transition-dur);
+}
+
+.red .btn
+{
+    clip-path: circle(50.0% at 50% 50%);
+    background-color: var(--main-color);
+    color: var(--main-bg);
+}
+
+.red .btn__overlay
+{
+    background-color: var(--main-accent);
+    color: var(--main-color);
+}
+
+.btn:hover .btn__overlay,
+.form__btn:hover .btn__overlay
+{
+    clip-path: circle(50.0% at 50% 50%);
+}

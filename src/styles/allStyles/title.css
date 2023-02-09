@@ -1,0 +1,9 @@
+.section-title__divider
+{
+    background-color: var(--main-color);
+}
+
+.section-title.title-indent
+{
+    text-indent: 0;
+}
