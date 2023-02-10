@@ -22,7 +22,7 @@ export default class HowWeWork
         const lenis = experience.scroll.lenis
 
         this.scrollSections(section)
-        this.scrollTo(lenis, section)
+        this.scrollToAnchors(lenis)
     }
     
     scrollSections(section) 
@@ -44,17 +44,13 @@ export default class HowWeWork
         thirdSectionTl.to(thirdItem, {y: 0})
     }
     
-    scrollTo(lenis, section)
+    scrollToAnchors(lenis)
     {
-        let nextFirst = $('.work__next--btn').eq(0)
-        let nextSecond = $('.work__next--btn').eq(1)
-
+        let nextFirst = $('.work__next--btn').eq(0).find('.btn')
+        let nextSecond = $('.work__next--btn').eq(1).find('.btn')
         
-        nextFirst.on('click', () => 
-        {
-            lenis.scrollTo(section, {offset: '300vh'})
-            console.log(lenis);
-        })
+        nextFirst.on('click', () => lenis.scrollTo('.work__anchor.is--1', {duration: 1}))
+        nextSecond.on('click', () => lenis.scrollTo('.work__anchor.is--2', {duration: 1}))
     }
 }
 // this.showNext()
