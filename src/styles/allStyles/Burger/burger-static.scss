@@ -1,0 +1,62 @@
+.nav__bg,
+.nav__right
+{
+    display: block;
+    clip-path: circle(0% at 100% 0);
+    transition: clip-path 0.8s cubic-bezier(0.33, 1, 0.68, 1), background-colot $transition-dur;
+}
+
+.nav__item,
+.nav__cta.is--inside-list
+{
+    opacity: 0;
+    transform: translateY(50%);
+    color: var(--main-color);
+    transition: opacity $transition-dur, transform $transition-dur, color $transition-dur;
+}
+
+.nav__item--index
+{
+    color: var(--main-accent);
+    transition: color $transition-dur;
+}
+
+.nav__cta.is--inside-list
+{
+    color: var(--main-accent);
+}
+
+.nav__list
+{
+    transition: padding-top 1.2s ease;
+}
+
+.nav__burger
+{
+    transition: opacity $transition-dur, visability $transition-dur;
+    pointer-events: auto;
+}
+
+.nav__right
+{
+    pointer-events: none;
+}
+
+.nav__logo 
+{
+    & .nav__logo--right .logo-char
+    {
+        transform: translateX(-10px);
+        opacity: 0;
+        transition: transform $transition-dur, opacity $transition-dur;
+    }
+    
+    & .nav__logo--right .nav__logo--copyright
+    {
+        transform: translateX(-51.5%);
+        transition: transform $transition-dur;
+        transition-delay: 0.3s;
+    }
+
+    pointer-events: auto;
+}

@@ -9,7 +9,7 @@
     background-color: var(--main-color);
     color: var(--main-bg);
     clip-path: circle(30.0% at 50% 130%);
-    transition: all var(--transition-dur);
+    transition: all $transition-dur;
 }
 
 .red .btn

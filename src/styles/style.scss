@@ -1,0 +1,49 @@
+@import './allStyles/root.scss';
+@import './allStyles/trail.scss';
+@import './allStyles/delay.scss';
+@import './allStyles/title.scss';
+@import './allStyles/set-colors.scss';
+@import './allStyles/loader.scss';
+@import './allStyles/projects.scss';
+@import './allStyles/slider.scss';
+@import './allStyles/focus.scss';
+@import './allStyles/form.scss';
+@import './allStyles/validate.scss';
+@import './allStyles/hero.scss';
+@import './allStyles/button.scss';
+@import './allStyles/how-we-work.scss';
+@import './allStyles/award.scss';
+@import './allStyles/largeText.scss';
+@import './allStyles/Burger/burger.scss';
+@import './allStyles/ChangeColors/color-transitions.scss';
+@import './allStyles/ChangeColors/dark.scss';
+@import './allStyles/ChangeColors/light.scss';
+
+body, header
+{
+    background-color: var(--main-bg);
+}
+
+.loader
+{
+  display: flex;
+}
+
+::selection
+{
+  background-color: var(--main-accent);
+  color: var(--main-color);
+  -webkit-text-fill-color: var(--main-color);
+  -webkit-text-stroke-color: transparent;
+}
+
+::-webkit-scrollbar 
+{
+    display: none;
+}
+
+html
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}

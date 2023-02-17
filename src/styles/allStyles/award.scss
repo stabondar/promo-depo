@@ -1,0 +1,29 @@
+.award__row--line
+{
+    background-color: var(--main-color);
+    transition: background-color $transition-dur;
+}
+
+.award__row:first-child .f--24
+{
+    opacity: 0.35;
+}
+
+.award__row img
+{
+    transition: opacity $transition-dur, transform $transition-dur;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.award__row:hover img
+{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.award__img--parent
+{
+    pointer-events: none;
+    z-index: 3;
+}

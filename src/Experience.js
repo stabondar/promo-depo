@@ -1,9 +1,11 @@
 import Anchors from './moduls/Anchors'
+import Award from './moduls/Award'
 import Burger from './moduls/Burger'
 import Button from './moduls/Button'
 import ChangeColor from './moduls/ChangeColor'
 import Cta from './moduls/Cta'
 import HowWeWork from './moduls/HowWeWork'
+import LargeText from './moduls/LargeText'
 import HoverLinks from './moduls/LinksHover'
 import ListItem from './moduls/ListItem'
 import Loader from './moduls/Loader'
@@ -40,5 +42,7 @@ export default class Experience
         this.anchors = new Anchors()
         this.button = new Button()
         this.howwework = new HowWeWork()
+        this.award = new Award()
+        this.largeText = new LargeText()
     }
 }

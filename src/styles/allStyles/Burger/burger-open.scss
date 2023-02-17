@@ -1,0 +1,31 @@
+.nav__burger--parent.open 
+{
+    & .nav__bg,
+    & .nav__right
+   {
+       clip-path: circle(140% at 100% 0);
+   }
+
+   & .nav__cta.is--inside-list
+   {
+       opacity: 1;
+       transform: translateY(0%);
+   }
+
+   & .nav__item
+   {
+       opacity: 1;
+       color: var(--main-accent);
+       transform: translateY(0%);
+   }
+
+    & .nav__item--index
+    {
+        color: var(--main-bg);
+    }
+
+    & .nav__right
+    {
+        pointer-events: auto;
+    }
+}

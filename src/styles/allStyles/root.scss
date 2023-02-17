@@ -1,0 +1,58 @@
+$transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+
+:root
+{
+    --main-bg: #ef340d;
+    --main-color: #1c1c1c;
+    --main-accent: #dad3ca;
+}
+
+.dark:root
+{
+    --main-bg: #1c1c1c;  
+    --main-color: #dad3ca;  
+    --main-accent: #ef340d;  
+}
+
+.light:root
+{
+    --main-bg: #dad3ca;  
+    --main-color: #1c1c1c;  
+    --main-accent: #ef340d;  
+}
+
+.red:root
+{
+    --main-bg: #ef340d;  
+    --main-color: #1c1c1c;  
+    --main-accent: #dad3ca;  
+}
+
+// :root
+// {
+//     --main-bg: #ef340d;
+//     --main-color: #1c1c1c;
+//     --main-accent: #dad3ca;
+//     --transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+// }
+
+// .dark:root
+// {
+//     --main-bg: #{#1c1c1c};  
+//     --main-color: #{#dad3ca};  
+//     --main-accent: #{#ef340d};  
+// }
+
+// .light:root
+// {
+//     --main-bg: #{#dad3ca};  
+//     --main-color: #{#1c1c1c};  
+//     --main-accent: #{#ef340d};  
+// }
+
+// .red:root
+// {
+//     --main-bg: #{#ef340d};  
+//     --main-color: #{#1c1c1c};  
+//     --main-accent: #{#dad3ca};  
+// }
