@@ -5,6 +5,7 @@ $transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     --main-bg: #ef340d;
     --main-color: #1c1c1c;
     --main-accent: #dad3ca;
+    --border-color: rgba(218, 211, 202, 0.35)
 }
 
 .dark:root
@@ -12,6 +13,7 @@ $transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     --main-bg: #1c1c1c;  
     --main-color: #dad3ca;  
     --main-accent: #ef340d;  
+    --border-color: rgba(239, 52, 13, 0.35)
 }
 
 .light:root
@@ -19,6 +21,7 @@ $transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     --main-bg: #dad3ca;  
     --main-color: #1c1c1c;  
     --main-accent: #ef340d;  
+    --border-color: rgba(239, 52, 13, 0.35)
 }
 
 .red:root

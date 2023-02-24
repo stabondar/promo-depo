@@ -27,22 +27,26 @@ export default class Experience
         instance = this
         
         this.utils = new Utils()
-        this.trail = new Trail()
         this.scroll = new Scroll()
         this.burger = new Burger()
-        this.loader = new Loader()
         this.changeColor = new ChangeColor()
         this.hoverLinks = new HoverLinks()
         this.title = new Title()
-        this.titleDivider = new TitleDivider()
         this.listItem = new ListItem()
-        this.slider = new Slider()
-        this.cta = new Cta()
         this.validate = new Validate()
-        this.anchors = new Anchors()
         this.button = new Button()
-        this.howwework = new HowWeWork()
-        this.award = new Award()
-        this.largeText = new LargeText()
+        
+        if($('body').attr('page') == 'home') 
+        { 
+            this.award = new Award()
+            this.trail = new Trail() 
+            this.slider = new Slider()
+            this.largeText = new LargeText()
+            this.loader = new Loader()
+            this.howwework = new HowWeWork()
+            this.anchors = new Anchors()
+            this.cta = new Cta()
+            this.titleDivider = new TitleDivider()
+        } 
     }
 }

@@ -10,21 +10,27 @@ export default class HowWeWork
 {
     constructor()
     {
+        let mm = gsap.matchMedia()
+        let isDesktop = '(min-width: 991px)'
+
         let section = $('.work__body')
         let sectionTitle = section.find('.section-title')
         let title = section.find('h2')
         let divider = section.find('.section-title__divider')
         let tl = gsap.timeline({ scrollTrigger: {trigger: sectionTitle, start: 'top 20%', end: 'top top', scrub: 1}, defaults: {ease: 'none'} })
 
-        tl.to(title, {transformOrigin: 'left bottom', scale: 0.35})
-        .to(divider, {width: '94.8em'}, '<')
-
         const experience = new Experience()
         const lenis = experience.scroll.lenis
 
-        this.scrollSections(section)
-        this.scrollToAnchors(lenis)
-        this.hoverTiles()
+        mm.add(isDesktop, () => 
+        {
+            tl.to(title, {transformOrigin: 'left bottom', scale: 0.35})
+            .to(divider, {width: '94.8em'}, '<')
+
+            this.scrollSections(section)
+            this.scrollToAnchors(lenis)
+            this.hoverTiles()
+        })
     }
     
     scrollSections(section) 

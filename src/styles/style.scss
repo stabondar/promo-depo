@@ -13,7 +13,9 @@
 @import './allStyles/button.scss';
 @import './allStyles/how-we-work.scss';
 @import './allStyles/award.scss';
+@import './allStyles/footer.scss';
 @import './allStyles/largeText.scss';
+@import './allStyles/fonts-media.scss';
 @import './allStyles/Burger/burger.scss';
 @import './allStyles/ChangeColors/color-transitions.scss';
 @import './allStyles/ChangeColors/dark.scss';
@@ -22,6 +24,11 @@
 body, header
 {
     background-color: var(--main-bg);
+}
+
+main 
+{
+    contain: paint;
 }
 
 .loader

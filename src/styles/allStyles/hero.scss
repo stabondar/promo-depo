@@ -1,5 +1,18 @@
 .hero
 {
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 991px) 
+{   
+    .hero__body
+    {
+        min-height: 100svh;
+    }
+
+    .borders__right,
+    .borders__left
+    {
+        height: 100dvh;
+    }
 }

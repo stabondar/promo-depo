@@ -19,11 +19,11 @@ export default class ListItem
                 onEnter: () => tlList.play()
             })
 
-            ScrollTrigger.create({
-                trigger: trigger,
-                start: 'top bottom',
-                onEnter: () => tlList.pause(0)
-            })
+            // ScrollTrigger.create({
+            //     trigger: trigger,
+            //     start: 'top bottom',
+            //     onEnter: () => tlList.pause(0)
+            // })
 
             ScrollTrigger.create({
                 trigger: trigger,

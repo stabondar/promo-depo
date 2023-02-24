@@ -7,6 +7,9 @@ export default class TitleDivider
 {
     constructor()
     {
+        let mm = gsap.matchMedia()
+        let isMobile = '(max-width: 991px)'
+
         let enter = 'top 80%'
         let divider = $('.section-title__divider')
         $(divider).each(function()
@@ -22,10 +25,21 @@ export default class TitleDivider
                 onEnter: () => tl.play()
             })
 
-            ScrollTrigger.create({
-                trigger: parent,
-                start: 'top bottom',
-                onEnter: () => tl.pause(0)
+            // ScrollTrigger.create({
+            //     trigger: parent,
+            //     start: 'top bottom',
+            //     onEnter: () => tl.pause(0)
+            // })
+        })
+
+        mm.add(isMobile, () => 
+        {
+            let linksList = $('.projects__title--list')
+            $(linksList).each(function()
+            {
+                let self = $(this)
+                let divider = self.find('.projects__title--item:nth-child(2n+2)')
+                gsap.set(divider, {display: 'none'})
             })
         })
     }
