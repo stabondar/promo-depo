@@ -9,16 +9,13 @@
     width: clamp(570px, 50%, 40rem) !important
 }
 
-@media screen and (max-width: 480px) 
+/* .swiper-slide
 {
-    .swiper-slide
-    {
-        width: 100% !important;
-        height: 53.33em !important;
-    }
-
-    .swiper-slide.is--large
-    {
-        width: 100% !important;
-    }
+    width: 40% !important;
+    height: 26.875rem !important;
 }
+
+.swiper-slide.is--large
+{
+    width: 70.625% !important;
+} */

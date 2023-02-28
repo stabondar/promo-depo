@@ -1,4 +1,4 @@
-.nav__body.open 
+.nav__burger--parent.open 
 {
     & .nav__bg,
     & .nav__right
@@ -28,49 +28,4 @@
     {
         pointer-events: auto;
     }
-
-    & .nav__burger--line
-    {
-        background-color: var(--main-bg);
-    }
-}
-
-@media screen and (max-width: 991px) 
-{
-    .nav__body.open 
-    {
-        & .nav__logo
-        {
-            filter: invert(0);
-            z-index: 2;
-
-            & path
-            {
-                fill: var(--main-bg);
-            } 
-
-            & .logo-char
-            {
-                transform: translateX(0);
-                opacity: 1;
-            }
-
-            & .nav__logo--copyright
-            {
-                transform: translateX(0em) !important; 
-                transition-delay: 0s !important;
-            }
-        }
-
-        & .nav__burger--line
-        {
-            background-color: var(--main-bg);
-        }
-
-        & .nav__bg,
-        & .nav__right
-        {
-            clip-path: circle(150% at 100% 0);
-        }
-    }  
 }

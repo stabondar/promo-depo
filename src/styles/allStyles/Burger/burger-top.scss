@@ -1,41 +1,35 @@
-@media screen and (min-width: 991px) 
-{
-    .at-top
-    {
-        & .nav__burger
-        {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
-
-        & .nav__right
-        {
-            clip-path: circle(140% at 100% 0) !important;
-            transition: clip-path 0.1s linear !important;
-        }
-
-        & .nav__list
-        {
-            transition: padding-top 0s linear !important;
-            padding-top: 0rem;
-        }
-
-        & :is(.nav__cta.is--inside-list, .nav__item)
-        {
-            opacity: 1 !important;
-            transform: translateY(0%) !important;
-        }
-
-        & .nav__right
-        {
-            pointer-events: auto;
-        }
-    }     
-}
-
 .at-top
 {
+    & .nav__burger
+    {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    & .nav__right
+    {
+        clip-path: circle(140% at 100% 0) !important;
+        transition: clip-path 0.1s linear !important;
+    }
+
+    & .nav__list
+    {
+        transition: padding-top 0s linear !important;
+        padding-top: 0rem;
+    }
+
+    & :is(.nav__cta.is--inside-list, .nav__item)
+    {
+        opacity: 1 !important;
+        transform: translateY(0%) !important;
+    }
+
+    & .nav__right
+    {
+        pointer-events: auto;
+    }
+
     & .nav__logo .nav__logo--right 
     {
         & .logo-char 
@@ -50,7 +44,9 @@
             transition-delay: 0s !important;
         }
     } 
-}     
+} 
+
+
 
 .nav__logo:hover .nav__logo--right
 {

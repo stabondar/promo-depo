@@ -7,9 +7,6 @@ export default class HoverLinks
 {
     constructor()
     {
-        let mm = gsap.matchMedia()
-        let isDesktop = '(min-width: 991px)'
-
         const linkEffect = (parent, text, fontStyle, left, right) =>
         {
             let copy = text.clone().appendTo(parent).removeAttr('text-word')
@@ -22,11 +19,8 @@ export default class HoverLinks
             tl.to(textSplit.chars, {opacity: 0})
             .from(copySplit.chars, {opacity: 0}, '<0.4')
 
-            mm.add(isDesktop, () =>
-            {
-                parent.on('mouseenter', () => tl.play())
-                parent.on('mouseleave', () => tl.timeScale(1.5).reverse())
-            })
+            parent.on('mouseenter', () => tl.play())
+            parent.on('mouseleave', () => tl.timeScale(1.5).reverse())
         }
 
         let navItem = $('.nav__list').find('a')
@@ -44,15 +38,5 @@ export default class HoverLinks
             let text = self.find('.f--84')
             linkEffect(self, text, 'normal', 0, 'right')
         })
-
-        let email = $('a.footer__title')
-        $(email).each(function()
-        {
-            let self = $(this)
-            gsap.set(self, {position: 'relative'})
-            let text = self.find('.f--128')
-            linkEffect(self, text, 'normal', 0, 'right')
-        })
-
     }
 }

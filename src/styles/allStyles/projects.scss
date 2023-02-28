@@ -3,11 +3,8 @@
     height: calc(100% - 2.5rem);
 }
 
-@media screen and (min-width: 480px) 
+.projects__left 
 {
-    .projects__left 
-    {
-        position: relative;
-        z-index: 2;
-    }
+    position: relative;
+    z-index: 2;
 }

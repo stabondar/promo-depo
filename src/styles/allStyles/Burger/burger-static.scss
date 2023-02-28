@@ -48,11 +48,7 @@
     {
         transform: translateX(-10px);
         opacity: 0;
-    }
-
-    & path
-    {
-        transition: transform $transition-dur, opacity $transition-dur, fill $transition-dur;
+        transition: transform $transition-dur, opacity $transition-dur;
     }
     
     & .nav__logo--right .nav__logo--copyright
