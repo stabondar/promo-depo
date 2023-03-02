@@ -27,3 +27,11 @@
     pointer-events: none;
     z-index: 3;
 }
+
+@media screen and (max-width: 480px) 
+{
+    .award__row:first-child
+    {
+        display: none;
+    }    
+}

@@ -1,0 +1,59 @@
+[page='privacy'],
+[page='404']
+{
+    & .nav__logo
+    {
+        opacity: 1;
+    }
+
+    & .nav__logo,
+    & .nav__burger,
+    & .nav__right
+    {
+        pointer-events: auto;
+    }
+
+    & .nav
+    {
+        z-index: 4;
+    }
+}
+
+li
+{
+    position: relative;
+    display: inline;
+}
+
+li::before
+{
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 0.85rem;
+    left: -1.5rem;
+    border-radius: 100vw;
+    background-image: url(https://uploads-ssl.webflow.com/614495d4b725a3701eb131d2/63fda6b38f3f2e6a53b605c0_Ellipse%204.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}   
+
+li a
+{
+    color: var(--main-accent);
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 0.5rem;
+}
+
+@media screen and (max-width: 480px) 
+{
+    li::before
+    {
+        width: 0.5rem;
+        height: 0.5rem;
+        top: 0.6rem;
+        left: -1.5rem;
+    }      
+}

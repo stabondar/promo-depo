@@ -1,31 +1,3 @@
-.work__anchor
-{
-    display: block;
-}
-
-.work__body
-{
-    height: 500vh;
-}
-
-.work__list
-{
-    position: sticky;
-    top: 0;
-    height: 100vh;
-}
-
-.work__item
-{
-    position: absolute;
-    top: 0;
-}
-
-.work__item.is--2
-{
-    transform: translateY(calc(100vh + 4.17em));
-}
-
 .section-title.is--work,
 .work__item,
 .work__next
@@ -38,4 +10,35 @@
 .dark .work__next
 {
     background-color: var(--main-bg);
+}
+
+@media screen and (min-width: 991px) 
+{
+    .work__anchor
+    {
+        display: block;
+    }
+
+    .work__body
+    {
+        height: 500vh;
+    }
+
+    .work__list
+    {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+
+    .work__item
+    {
+        position: absolute;
+        top: 0;
+    }
+
+    .work__item.is--2
+    {
+        transform: translateY(calc(100vh + 4.17em));
+    }
 }

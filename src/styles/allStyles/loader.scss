@@ -10,3 +10,13 @@ body.loading main
 {
     opacity: 0;
 }
+
+@media screen and (max-width: 480px) 
+{
+    .loader__row:nth-child(5),
+    .loader__row:nth-child(4),
+    .loader__row .loader__logo:nth-child(2n + 1)
+    {
+        display: none;
+    }
+}

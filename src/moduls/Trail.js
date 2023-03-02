@@ -4,6 +4,8 @@ export default class Trail
 {
     constructor()
     {
+        let mm = gsap.matchMedia()
+        let isDesktop = '(min-width: 991px)'
         // body element
         const body = document.body;
         const hero = document.querySelector('.hero')
@@ -175,7 +177,7 @@ export default class Trail
             }
         }
 
-        new ImageTrail()
+        mm.add(isDesktop, () => new ImageTrail())
     
     }
 }

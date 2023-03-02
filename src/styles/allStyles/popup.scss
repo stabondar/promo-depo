@@ -1,0 +1,24 @@
+.popup
+{
+    --main-bg: #ef340d;  
+    --main-color: #1c1c1c;  
+    --main-accent: #dad3ca;  
+
+    & .btn
+    {
+        clip-path: circle(50.0% at 50% 50%);
+        background-color: var(--main-color);
+    }
+
+    & .btn__overlay
+    {
+        background-color: var(--main-accent);
+        color: var(--main-color);
+    }
+    
+    & .f--32 div
+    {
+        -webkit-text-fill-color: var(--main-accent) !important;
+    }
+}
+
