@@ -31,6 +31,12 @@
         {
             pointer-events: auto;
         }
+
+        & .nav__srroll--cta
+        {
+            pointer-events: none;
+            opacity: 0;
+        }
     }     
 }
 
@@ -66,3 +72,11 @@
         transition-delay: 0s !important;
     }
 } 
+
+.nav__srroll--cta
+{
+    & .nav__cta
+    {
+        margin-top: 0;
+    }
+}

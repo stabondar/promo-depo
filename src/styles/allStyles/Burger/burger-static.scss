@@ -31,7 +31,8 @@
     transition: padding-top 1.2s ease;
 }
 
-.nav__burger
+.nav__burger,
+.nav__srroll--cta
 {
     transition: opacity $transition-dur, visability $transition-dur;
     pointer-events: auto;
@@ -40,6 +41,27 @@
 .nav__right
 {
     pointer-events: none;
+}
+
+.nav__srroll--cta
+{
+    color: var(--main-color);
+
+    & *
+    {
+        color: inherit;
+        transition: color $transition-dur;
+    }
+
+    & path
+    {
+        fill: currentColor;
+    }
+}
+
+.red .nav__srroll--cta
+{
+    color: var(--main-accent);
 }
 
 .nav__logo 

@@ -1,12 +1,24 @@
+.popup-visible
+{
+    overflow: hidden;
+}
+
 .popup
 {
-    --main-bg: #ef340d;  
-    --main-color: #1c1c1c;  
-    --main-accent: #dad3ca;  
+    --main-bg: #ef340d !important;  
+    --main-color: #1c1c1c !important;  
+    --main-accent: #dad3ca !important;  
+
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $transition-dur;
+    color: var(--main-color);
 
     & .btn
     {
         clip-path: circle(50.0% at 50% 50%);
+        color: var(--main-accent);
         background-color: var(--main-color);
     }
 
@@ -18,7 +30,34 @@
     
     & .f--32 div
     {
-        -webkit-text-fill-color: var(--main-accent) !important;
+        -webkit-text-fill-color: var(--main-color) !important;
     }
+
+    & .is--label 
+    {
+        color: var(--main-color) !important;
+    }
+}
+
+.popup-visible .popup
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 991px) 
+{
+    .popup
+    {
+        min-height: 100dvh;
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .popup__body
+    {
+        height: auto;
+    }
+    
 }
 

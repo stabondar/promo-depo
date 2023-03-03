@@ -15,13 +15,13 @@
    & .nav__item
    {
        opacity: 1;
-       color: var(--main-accent);
+       color: var(--main-bg);
        transform: translateY(0%);
    }
 
     & .nav__item--index
     {
-        color: var(--main-bg);
+        color: var(--main-accent);
     }
 
     & .nav__right
@@ -32,6 +32,12 @@
     & .nav__burger--line
     {
         background-color: var(--main-bg);
+    }
+
+    & .nav__srroll--cta
+    {
+        opacity: 0;
+        pointer-events: none;
     }
 }
 

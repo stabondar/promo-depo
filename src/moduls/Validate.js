@@ -16,5 +16,13 @@ export default class Validate
                 }
             }
         })
+
+        $('[type="submit"]').each(function()
+        {
+            let self = $(this)
+            let form = self.closest('form')
+
+            self.on('click', () => form.valid())
+        })
     }
 }

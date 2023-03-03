@@ -35,5 +35,7 @@ export default class LargeText
         {
             opacity: 0, ease: 'none', yPercent: 100, duration: charDuration, stagger: charStagger
         })
+
+        window.addEventListener('resize', () => ScrollTrigger.refresh())
     }
 }

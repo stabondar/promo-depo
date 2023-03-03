@@ -1,0 +1,139 @@
+.brief-visible
+{
+    overflow: hidden;
+}
+
+.brief
+{
+    --main-bg: #dad3ca !important;  
+    --main-color: #1c1c1c !important;  
+    --main-accent: #ef340d !important;  
+
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity $transition-dur;
+
+    min-height: 100dvh;
+    overflow: scroll;
+
+    & .brief__body
+    {
+        height: auto;
+        min-height: calc(100vh - 2.4vw);
+    }
+
+    & .btn
+    {
+        clip-path: circle(50.0% at 50% 50%);
+        color: var(--main-bg);
+        background-color: var(--main-accent);
+    }
+
+    & .btn__overlay
+    {
+        background-color: var(--main-color);
+        color: var(--main-bg);
+    }
+
+    & input
+    {
+        color: var(--main-color) !important;
+    }
+}
+
+.brief-visible .brief
+{
+    opacity: 1;
+    pointer-events: auto;
+
+    & .form__step
+    {
+        & *
+        {
+            pointer-events: none;
+        }
+    
+        &.active * 
+        {
+            pointer-events: all;
+        }
+    }
+}
+
+.form__next
+{
+    & .form__submit
+    {
+        pointer-events: none;
+    }
+
+    &.active .form__submit
+    {
+        pointer-events: all;
+    }
+}
+
+.form__step
+{
+    position: absolute;
+    top: 0;
+    width: 46.88em;
+}
+
+.form__back,
+.brief__descr,
+.form__step
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity $transition-dur, visibility 0.4s;
+
+    &.active
+    {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.4s;
+    }
+}
+
+@media screen and (max-width: 991px) 
+{
+    .form__step
+    {
+        position: relative;
+    }
+
+    .form__step
+    {
+        display: none;
+        width: 100%;
+
+        &.active
+        {
+            display: flex;
+        }
+    }
+
+    .form__back,
+    .brief__descr
+    {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .brief__descr
+    {
+        display: none;
+
+        &.active
+        {
+            display: block;
+        }
+    }
+
+    .form__index--parent
+    {
+        height: 1.6875rem !important;
+    }
+}

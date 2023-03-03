@@ -1,5 +1,6 @@
 import Anchors from './moduls/Anchors'
 import Award from './moduls/Award'
+import Brief from './moduls/Brief'
 import Burger from './moduls/Burger'
 import Button from './moduls/Button'
 import ChangeColor from './moduls/ChangeColor'
@@ -9,6 +10,7 @@ import LargeText from './moduls/LargeText'
 import HoverLinks from './moduls/LinksHover'
 import ListItem from './moduls/ListItem'
 import Loader from './moduls/Loader'
+import Popup from './moduls/Popup'
 import Privacy from './moduls/Privacy'
 import Scroll from './moduls/Scroll'
 import Slider from './moduls/Slider'
@@ -36,6 +38,8 @@ export default class Experience
         this.listItem = new ListItem()
         this.validate = new Validate()
         this.button = new Button()
+        this.popup = new Popup()
+        this.brief = new Brief()
         
         if($('body').attr('page') == 'home') 
         { 
