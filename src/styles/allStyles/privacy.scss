@@ -56,4 +56,13 @@ li a
         top: 0.6rem;
         left: -1.5rem;
     }      
+
+    [page='privacy']
+    {
+        & .nav__bg,
+        & .nav__right
+        {
+            pointer-events: none;
+        }
+    }
 }

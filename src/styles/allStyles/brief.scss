@@ -137,3 +137,11 @@
         height: 1.6875rem !important;
     }
 }
+
+@media screen and (max-width: 480px) 
+{
+    .form__index--parent
+    {
+        height: 5.87em !important;
+    }    
+}

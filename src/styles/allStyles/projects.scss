@@ -3,11 +3,25 @@
     height: calc(100% - 2.5rem);
 }
 
+.projects__arrow
+{
+    transition: background-color $transition-dur, color $transition-dur;
+
+    &:hover
+    {
+        background-color: var(--main-color);
+
+        & path
+        {
+            fill: var(--main-bg);
+        }
+    }
+}
+
 @media screen and (min-width: 480px) 
 {
     .projects__left 
     {
         position: relative;
-        z-index: 2;
     }
 }

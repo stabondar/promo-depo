@@ -86,3 +86,11 @@
 
     pointer-events: auto;
 }
+
+@media screen and (min-width: 991px) 
+{
+    .nav__logo--right .nav__logo--copyright
+    {
+        transform: translateX(-81.5px);
+    }
+}

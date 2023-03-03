@@ -54,5 +54,23 @@ export default class HoverLinks
             linkEffect(self, text, 'normal', 0, 'right')
         })
 
+        let copy = $('a.footer__copy')
+        $(copy).each(function()
+        {
+            let self = $(this)
+            gsap.set(self, {position: 'relative'})
+
+            let text = self.find('.f--32')
+            linkEffect(self, text, 'normal', 'auto', 0)
+        })
+
+        let navScroll = $('.nav__srroll--cta').find('.nav__cta')
+        $(navScroll).each(function()
+        {
+            let self = $(this)
+            gsap.set(self, {position: 'relative'})
+            let text = self.find('.f--24')
+            linkEffect(self, text, 'italic', 'auto', 0)
+        })
     }
 }

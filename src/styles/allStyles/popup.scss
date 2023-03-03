@@ -15,6 +15,15 @@
     transition: opacity $transition-dur;
     color: var(--main-color);
 
+    min-height: 100dvh;
+    overflow: scroll;
+
+    & .popup__body
+    {
+        height: auto;
+        min-height: calc(100vh - 2.4vw);
+    }
+
     & .btn
     {
         clip-path: circle(50.0% at 50% 50%);

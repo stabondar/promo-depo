@@ -96,6 +96,7 @@ export default class HowWeWork
             let staticTitleSplit = new SplitText(staticTitle, {type: 'lines'})
 
             gsap.set([descrSplit.lines, absoluteTitleSplit.lines, staticTitleSplit.lines], {overflow: 'hidden'})
+            gsap.set(staticTitleSplit.lines, {paddingRight: 10})
             gsap.set([absoluteTitleSplit.lines, staticTitleSplit.lines], {paddingBottom: 3})
 
             let descrSplitSecond = new SplitText(descrSplit.lines, {type: 'lines'})

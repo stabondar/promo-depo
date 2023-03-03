@@ -6,15 +6,20 @@ export default class Validate
     constructor()
     {
 
-        $('form').validate(
+        let form = $('form')
+        $(form).each(function()
         {
-            rules: 
+            let self = $(this)
+            $(self).validate(
             {
-                name: {
-                    required: true,
-                    minlength: 2
+                rules: 
+                {
+                    name: {
+                        required: true,
+                        minlength: 2
+                    }
                 }
-            }
+            })
         })
 
         $('[type="submit"]').each(function()
