@@ -1,3 +1,15 @@
+$black: #1C1C21;
+$white: #FFFFFF;
+$blue: #3368CF;
+$purple: #DFDEFF;
+$red: #EF340D;
+$dark-blue: #000911;
+$buble-red: #D44B43;
+$flow-dark: #14111F;
+$flow-light: #8146FF;
+
+$transition: 0.6s ease;
+
 .projects__border.is--right
 {
     height: calc(100% - 2.5rem);
@@ -23,5 +35,232 @@
     .projects__left 
     {
         position: relative;
+    }
+}
+
+// Items hover
+.projects__item
+{   
+    & .projects__item--img
+    {
+        transition: background-color $transition, color $transition;
+        -webkit-transition: border-radius $transition, background-color $transition;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    // Orb Hover
+    &.is--orb
+    {
+        & .projects__item--img
+        {
+            background-color: $white;
+        }
+
+        & .projects__img--orb-translate
+        {
+            transition: transform $transition;
+        }
+    }
+
+    // NFT
+    &.is--nft
+    {
+        & .projects__item--img
+        {
+            background-color: $blue;
+        }
+
+        & .projects__img--nft
+        {
+            transition: transform $transition;
+        }
+    }
+
+    // Law
+    &.is--law,
+    &.is--fox
+    {
+        & .projects__img--law
+        {
+            transition: opacity 0.6s ease;
+        }
+
+        &:hover
+        {
+            & .projects__img--law
+            {
+                opacity: 1;
+            }
+        }
+    }
+
+    // Pictures
+    &.is--bubble
+    {
+        & .projects__item--img
+        {
+            color: $white;
+            background-color: $buble-red;
+        }
+
+        & .projects__img--pict-border
+        {
+            transition: transform $transition;
+            transform: rotate(0deg) scale(1.1);
+        }
+    }
+
+    // lf
+    &.is--lf
+    {
+        & .projects__item--img
+        {
+            background-color: $red;
+        }
+
+        & .projects__img--lf
+        {
+            transition: opacity $transition, transform $transition;
+        }
+
+        & .projects__img--lf:nth-child(2)
+        {
+            opacity: 0;
+        }
+    }
+
+    // flow
+    &.is--flow
+    {
+        & .projects__item--img
+        {
+            background-color: $flow-dark;
+        }
+
+        & .projects__img--flow
+        {
+            transition: opacity $transition, transform $transition;
+        }
+
+        & .projects__img--flow:nth-child(2)
+        {
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 991px) 
+{
+    .projects__item
+    {
+        // Orb Hover
+        &.is--orb
+        {
+            &:hover
+            {
+                & .projects__img--orb-translate
+                {
+                    transform: translate(-30%, 0%);
+                }
+
+                & .projects__item--img
+                {
+                    background-color: $black;
+                }
+            }
+        }
+
+        // NFT
+        &.is--nft
+        {
+            &:hover
+            {
+                & .projects__img--nft
+                {
+                    transform: translate(0%, 0%);
+                }
+
+                & .projects__item--img
+                {
+                    background-color: $purple;
+                }
+            }
+        }
+
+        // Law
+        &.is--law,
+        &.is--fox
+        {
+            &:hover
+            {
+                & .projects__img--law
+                {
+                    opacity: 1;
+                }
+            }
+        }
+
+        // Pictures
+        &.is--bubble
+        {
+            &:hover
+            {
+                & .projects__item--img
+                {
+                    color: $buble-red;
+                    background-color: $white;
+                }
+
+                & .projects__img--pict-border
+                {
+                    transform: rotate(360deg) scale(0.9);
+                }
+            }
+        }
+
+        // lf
+        &.is--lf
+        {
+            &:hover
+            {
+                & .projects__item--img
+                {
+                    background-color: $dark-blue;
+                }
+
+                & .projects__img--lf
+                {
+                    transform: translate(0%, 15%);
+                }
+        
+                & .projects__img--lf:nth-child(2)
+                {
+                    opacity: 1;
+                }
+            }
+        }
+
+        // flow
+        &.is--flow
+        {
+            &:hover
+            {
+                & .projects__item--img
+                {
+                    background-color: $flow-light;
+                }
+
+                & .projects__img--flow
+                {
+                    transform: rotate(360deg);
+                }
+        
+                & .projects__img--flow:nth-child(2)
+                {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }

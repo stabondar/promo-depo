@@ -1,12 +1,13 @@
 .swiper-slide
 {
-    width: clamp(320px, 20%, 40rem) !important;
+    width: clamp(320px, 10%, 320px) !important;
     height: 26.875rem !important;
+    // overflow: hidden;
 }
 
 .swiper-slide.is--large
 {
-    width: clamp(570px, 50%, 40rem) !important
+    width: clamp(570px, 40%, 570px) !important
 }
 
 @media screen and (max-width: 480px) 

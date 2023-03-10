@@ -12,6 +12,7 @@ import ListItem from './moduls/ListItem'
 import Loader from './moduls/Loader'
 import Popup from './moduls/Popup'
 import Privacy from './moduls/Privacy'
+import Projects from './moduls/Projects'
 import Scroll from './moduls/Scroll'
 import Slider from './moduls/Slider'
 import Title from './moduls/Title'
@@ -52,6 +53,7 @@ export default class Experience
             this.anchors = new Anchors()
             this.cta = new Cta()
             this.titleDivider = new TitleDivider()
+            this.projects = new Projects()
         } 
 
         if($('body').attr('page') == 'privacy') { $('html').addClass('light') }

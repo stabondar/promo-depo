@@ -9,11 +9,11 @@ export default class Slider
         let sliderActiveText = $('.projects__counter').find('p').eq(0)
         let swiper = new Swiper(".projects__right", 
         {
+            loop: true,
             slidesPerView: "auto",
             keyboard: true,
             direction: "horizontal",
-            loop: true,
-            speed: 800,
+            speed: 200,
             touchEventsTarget: "container",
             freeMode: false,
             grabCursor: true,
@@ -22,7 +22,7 @@ export default class Slider
             },
         })
 
-        let sliderLength = swiper.slides.length / 2 - 4
+        let sliderLength = swiper.slides.length / 2 - 3.5
         sliderLengthText.text(`0${sliderLength}`)
 
         let sliderActive = swiper.activeIndex
