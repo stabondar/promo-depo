@@ -41,6 +41,20 @@
     }
 }
 
+[blue-page]
+{
+    .nav__body.open 
+    {
+        --black: #1C1C1C;
+        --white: #fff;
+        --accent: #CAC9FF;
+    
+        --main-accent: var(--accent) !important; 
+        --main-color: var(--black) !important;
+        --main-bg: var(--white) !important;
+    }
+}
+
 @media screen and (max-width: 991px) 
 {
     .nav__body.open 

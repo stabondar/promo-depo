@@ -12,6 +12,19 @@
     background-color: var(--main-bg);
 }
 
+[blue-page]
+{
+    .work__item--index
+    {
+        border-color: var(--main-accent);
+    }
+
+    .work__item.is--2
+    {
+        background-color: var(--main-bg);
+    }
+}
+
 @media screen and (min-width: 991px) 
 {
     .work__anchor

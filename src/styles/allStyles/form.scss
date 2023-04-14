@@ -7,3 +7,16 @@ form label
 {
     pointer-events: none;
 }
+
+[blue-page]
+{
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, .w-input, .w-select
+    {
+        color: var(--main-color) !important;
+    }
+
+    .form__item--border.white
+    {
+        background: #fff !important;
+    }
+}

@@ -3,6 +3,32 @@
     overflow: hidden;
 }
 
+[blue-page]
+{
+    .popup
+    {
+        --blue: #2400FF;
+        --text: #1C1C1C;
+        --accent: #CAC9FF;
+    
+        --main-accent: var(--blue) !important; 
+        --main-color: var(--text) !important;
+        --main-bg: var(--accent) !important;
+
+        color:  var(--main-color);
+
+        & .popup__body
+        {
+            background-color: var(--main-bg);
+        }
+
+        & .popup__close
+        {
+            color: var(--main-color);
+        }
+    }
+}
+
 .popup
 {
     --main-bg: #ef340d !important;  

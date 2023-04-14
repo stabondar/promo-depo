@@ -30,3 +30,34 @@ $transition-dur: 0.4s cubic-bezier(0.33, 1, 0.68, 1);
     --main-color: #1c1c1c;  
     --main-accent: #dad3ca;  
 }
+
+// Blue theme
+:root:has([blue-page])
+{
+    --main-bg: #CAC9FF; 
+    --main-color: #1c1c1c;
+    --main-accent: #2400FF;
+}
+
+.dark:root:has([blue-page])
+{
+    --main-bg: #FFFFFF;  
+    --main-color: #1c1c1c;  
+    --main-accent: #2400FF;  
+    --border-color: rgba(36, 0, 255, 0.35)
+}
+
+.light:root:has([blue-page])
+{
+    --main-bg: #CAC9FF;  
+    --main-color: #1c1c1c;  
+    --main-accent: #2400FF;  
+    --border-color: rgba(36, 0, 255, 0.35)
+}
+
+.red:root:has([blue-page])
+{
+    --main-bg: #CAC9FF;  
+    --main-color: #1c1c1c;  
+    --main-accent: #2400FF;  
+}

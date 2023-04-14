@@ -44,12 +44,17 @@ export default class Experience
         
         if($('body').attr('page') == 'home') 
         { 
+            if($('body').attr('data-short') != 'true') 
+            {
+                
+                this.trail = new Trail() 
+                this.largeText = new LargeText()
+                this.howwework = new HowWeWork()
+            }
+
             this.award = new Award()
-            this.trail = new Trail() 
             this.slider = new Slider()
-            this.largeText = new LargeText()
             this.loader = new Loader()
-            this.howwework = new HowWeWork()
             this.anchors = new Anchors()
             this.cta = new Cta()
             this.titleDivider = new TitleDivider()

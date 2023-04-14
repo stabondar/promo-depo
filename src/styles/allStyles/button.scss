@@ -30,3 +30,12 @@
 {
     clip-path: circle(50.0% at 50% 50%);
 }
+
+[blue-page] 
+{
+    .btn p,
+    .btn:hover p
+    {
+        color: #fff !important;
+    }
+}

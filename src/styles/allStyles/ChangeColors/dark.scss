@@ -15,8 +15,18 @@
         background-color: var(--main-bg);
     }
 
+    &:has([blue-page]) .nav__burger--parent.open .nav__burger--line
+    {
+        background-color: var(--main-accent);
+    }
+
     & .nav__logo
     {
         filter: invert(1);
+    }
+
+    &:has([blue-page]) .nav__logo
+    {
+        filter: invert(0);
     }
 }

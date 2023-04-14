@@ -94,3 +94,24 @@
         transform: translateX(-81.5px);
     }
 }
+
+[blue-page]
+{
+    .nav__burger--line 
+    {
+        background-color: #1c1c1c !important;
+    }
+
+    .nav__srroll--cta
+    {
+        color: #1c1c1c !important;
+    }
+
+    .nav__body.open 
+    {
+        .nav__burger--line 
+        {
+            background-color: var(--main-bg) !important;
+        } 
+    }
+}

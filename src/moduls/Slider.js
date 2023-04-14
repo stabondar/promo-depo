@@ -22,7 +22,7 @@ export default class Slider
             },
         })
 
-        let sliderLength = swiper.slides.length / 2 - 3.5
+        let sliderLength = swiper.slides.length / 2 - 3
         sliderLengthText.text(`0${sliderLength}`)
 
         let sliderActive = swiper.activeIndex

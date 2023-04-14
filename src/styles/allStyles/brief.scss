@@ -3,6 +3,53 @@
     overflow: hidden;
 }
 
+[blue-page]
+{
+    .brief
+    {
+        --blue: #2400FF;
+        --text: #1C1C1C;
+        --accent: #CAC9FF;
+        --white: #FFFFFF;
+    
+        --main-accent: var(--blue) !important; 
+        --main-color: var(--text) !important;
+        --main-bg: var(--accent) !important;
+
+        color:  var(--main-color);
+
+        & .brief__body
+        {
+            background-color: var(--main-bg);
+        }
+
+        & .popup__close
+        {
+            color: var(--main-color);
+        }
+
+        & .form__radio--bg
+        {
+            background-color: var(--main-color);
+        }
+
+        & .form__radio--bg.w--redirected-checked
+        {
+            background-color: var(--main-accent);
+        }
+
+        & .form__radio
+        {
+            color: var(--white);
+        }
+
+        & .form__back--arrow path
+        {
+            fill: var(--main-accent);
+        }
+    }
+}
+
 .brief
 {
     --main-bg: #dad3ca !important;  

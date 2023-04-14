@@ -19,4 +19,9 @@
     {
         background-color: var(--main-color);
     }
+
+    &:has([blue-page]) .nav__burger--parent.open .nav__burger--line
+    {
+        background-color: var(--main-bg);
+    }
 } 
